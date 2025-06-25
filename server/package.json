@@ -1,0 +1,35 @@
+{
+  "name": "bandmate-rehearsal-coordination-platform-server",
+  "version": "1.0.0",
+  "description": "Backend server for the Bandmate Rehearsal Coordination Platform",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrate": "node src/db/migrations/index.js",
+    "seed": "node src/db/seeds/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "graphql": "^16.6.0",
+    "express-graphql": "^0.12.0",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.10.0",
+    "redis": "^4.6.6",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2",
+    "nodemailer": "^6.9.1",
+    "twilio": "^4.10.0",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}
